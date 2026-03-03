@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a;
+}
+
+.home{
+    color: #fff;
+}
+
+h1{
+    font-size: 5rem;
+}
+span{
+    font-size: 12rem;
+}
