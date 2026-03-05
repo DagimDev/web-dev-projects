@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+}
+/* container */
+.container {
+    margin: auto 0;
+    padding: 2rem;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+
+/* img wrapper */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  /* background: rgba(255, 255, 255, 0.4); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* image hover effect animation */
+.img-wrapper > img, 
+.img-wrapper > .content {
+    transition: 300ms ease-in-out;
+}
+
+
+/* image hover effect blur*/
+.img-wrapper:hover > img.blur{
+    filter: blur(3px);
+}
+
+
+/* image hover effect grayscale*/
+.img-wrapper:hover > img.gray{
+    filter: grayscale(1);
+}
+
+/* image hover effect zoom*/
+.img-wrapper:hover > img.zoom{
+    transform: scale(1.1);
+}
+
+
+/* image hover effect for fade */
+.img-wrapper > .content.fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover > .content.fade {
+    opacity: 1;
+}
+
+
+
+/* image hover effect to the left */
+.img-wrapper > .content.slide-left{
+    transform: translateX(-100%);
+}
+.img-wrapper:hover > .content.slide-left{
+    /* transform: scaleX(1); */
+    transform: translateX(0);
+}
+
+
+/* image hover effect to the right */
+.img-wrapper > .content.slide-right{
+    transform: translateX(100%);
+}
+.img-wrapper:hover > .content.slide-right{
+    transform: translateX(0);
+}
+
+
+/* image hover effect to up */
+.img-wrapper > .content.slide-up{
+    transform: translateY(-100%);
+}
+.img-wrapper:hover > .content.slide-up{
+    transform: translateY(0);
+}
+
+
+/* image hover effect to down */
+.img-wrapper > .content.slide-down{
+    transform: translateY(100%);
+}
+.img-wrapper:hover > .content.slide-down{
+    transform: translateY(0);
+}
