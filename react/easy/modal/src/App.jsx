@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,21 +8,13 @@ function App() {
   const openModal = () => {
     setIsOpen(true);
   };
-  const closeModal = () => {
-    setIsOpen(false);
-  };
+
   return (
     <div>
       <button onClick={openModal}>Open Modal</button>
-
-      {isOpen && (
-        <div onClick={closeModal} className="overlay">
-          <div onClick={(e) => e.stopPropagation()} className="modal">
-            <h2>My Modal</h2>
-            <button onClick={() => setIsOpen(false)}>close</button>
-          </div>
-        </div>
-      )}
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <h1>Dynamic Modal</h1>
+      </Modal>
     </div>
   );
 }
