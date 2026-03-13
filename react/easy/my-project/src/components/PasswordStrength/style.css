@@ -1,0 +1,73 @@
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.strength-bar {
+  width: 100%;
+  height: 30px;
+  background: #ddd;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.strength-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+.password-input {
+  --box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.toggle-password {
+  padding: 6px 10px;
+  cursor: pointer;
+  width: 70px;
+  background-color: #fff;
+  border: none;
+  box-shadow: var(--box-shadow);
+}
+
+.input {
+  padding: 0.5em;
+  border: none;
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 900ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 255, 0.5);
+  }
+}
+
+.password-rules {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.password-rules li {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.display-password {
+  color: #333;
+  font-size: 1.3rem;
+}

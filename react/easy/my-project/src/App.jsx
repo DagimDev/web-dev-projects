@@ -1,18 +1,23 @@
 import "./App.css";
 import AccordionItem from "./components/Accordion/AccordionItem";
 import Expandable from "./components/Expandable/Expandable";
+import PasswordStrength from "./components/PasswordStrength/PasswordStrength";
 
 function App() {
   return (
     <div>
-      {/*     
+      {/* Password Strength Checker Component */}
+      <PasswordStrength />
+
+      {/* Expandable Content Components */}
+      {/*           
       <Expandable title="What is React?">
         React is a JavaScript library for building user interfaces.
       </Expandable>
 
       <Expandable title="What is JavaScript?">
         JavaScript is a programming language used for web development.
-      </Expandable> */}
+      </Expandable>
       <AccordionItem title="What is React?">
         React is a JavaScript library for building interfaces.
       </AccordionItem>
@@ -27,7 +32,7 @@ function App() {
         <p>3️⃣ keyboard navigation (↑ ↓)</p>
         <p>4️⃣ ARIA accessibility attributes</p>
         <p>5️⃣ React compound component pattern</p>
-      </div>
+      </div> */}
     </div>
   );
 }
