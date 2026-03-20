@@ -1,0 +1,19 @@
+:root {
+  --lavender: #e6e6fa;
+  --thistle: #d8bfd8;
+  --plum: #dda0dd;
+  --blanchedalmond: #ffebcd;
+  --wheat: #f5deb3;
+  --honeydew: #f0fff0;
+  --mintcream: #f5fffa;
+  --aliceblue: #f0f8ff;
+  --ghostwhite: #f8f8ff;
+  --seashell: #fff5ee;
+  --oldlace: #fdf5e6;
+  --linen: #faf0e6;
+}
+.bg-color {
+  background-color: var(--lavender);
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
